@@ -26,11 +26,13 @@ a {
 ol, ul {
   list-style: none;
 }
-`
+`;
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <>
-    <GlobalStyle />
-    <Component {...pageProps} />
-  </>
+  return (
+    <>
+      <GlobalStyle />
+      <Component {...pageProps} />
+    </>
+  );
 }

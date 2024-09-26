@@ -1,8 +1,8 @@
+import localFont from "next/font/local";
 import Head from "next/head";
 import Image from "next/image";
-import localFont from "next/font/local";
-import styles from "@/styles/Home.module.css";
 import styled from "styled-components";
+import styles from "@/styles/Home.module.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,11 +17,11 @@ const geistMono = localFont({
 
 type ButtonProps = {
   color: string;
-}
+};
 
 const Button = styled.button<ButtonProps>`
- color: ${(props) => props.color};
-`
+  color: ${(props) => props.color};
+`;
 export default function Home() {
   return (
     <>
@@ -31,7 +31,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
@@ -47,7 +47,7 @@ export default function Home() {
           <ol>
             <li>
               Get started by editing <code>src/pages/index.tsx</code>.
-              <Button color ="blue">Helo</Button>
+              <Button color="blue">Helo</Button>
             </li>
             <li>Save and see your changes instantly.</li>
           </ol>

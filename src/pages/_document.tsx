@@ -1,6 +1,11 @@
-import Document, { DocumentContext, Html, Head, Main, NextScript } from "next/document";
+import Document, {
+  DocumentContext,
+  Html,
+  Head,
+  Main,
+  NextScript,
+} from "next/document";
 import { ServerStyleSheet } from "styled-components";
-
 
 export default function CustomDocument() {
   return (
@@ -21,8 +26,7 @@ CustomDocument.getInitialProps = async (ctx: DocumentContext) => {
   try {
     ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: (App) => (props) =>
-          sheet.collectStyles(<App {...props} />),
+        enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
       });
 
     const initialProps = await Document.getInitialProps(ctx);
@@ -38,4 +42,4 @@ CustomDocument.getInitialProps = async (ctx: DocumentContext) => {
   } finally {
     sheet.seal();
   }
-}
+};

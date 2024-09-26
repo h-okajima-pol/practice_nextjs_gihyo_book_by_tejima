@@ -47,7 +47,7 @@ export default function Home() {
           <ol>
             <li>
               Get started by editing <code>src/pages/index.tsx</code>.
-              <Button color ="black">Helo</Button>
+              <Button color ="blue">Helo</Button>
             </li>
             <li>Save and see your changes instantly.</li>
           </ol>

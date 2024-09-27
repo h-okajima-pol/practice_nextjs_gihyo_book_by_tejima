@@ -5,7 +5,7 @@ export const checkUser = (obj:unknown): obj is User => {
         return false;
     }
 
-    const hasRequiredKeys = (
+    const hasUserKeys = (
         'id' in obj &&
         'username' in obj &&
         'displayName' in obj &&
@@ -14,7 +14,7 @@ export const checkUser = (obj:unknown): obj is User => {
         'description' in obj
     );
 
-    if (!hasRequiredKeys) {
+    if (!hasUserKeys) {
         return false;
     }
 

@@ -7,8 +7,8 @@ import space from '@/themes/spaces';
 
 export const theme = {
     space,
-    // fontSizes,
+    fontSizes,
     letterSpacings,
     lineHeights,
-    // colors
+    colors
 }

@@ -1,0 +1,10 @@
+storybook error
+'OriginalNextImage' は値を参照していますが、ここでは型として使用されています。'typeof OriginalNextImage' を意図していましたか? の解決策
+https://teratail.com/questions/291573
+'React' は UMD グローバルを参照していますが、現在のファイルはモジュールです。代わりにインポートを追加することを考慮してください。の解決策
+https://zenn.dev/i_sa/scraps/1f28a008a6b7a4
+https://akamist.com/blog/archives/5188
+→ただし、storybookはtsかjsしかダメなので、上記解決策は意味をなさない。
+
+storybook8のpreviewのDoc
+https://storybook.js.org/docs/writing-stories/decorators

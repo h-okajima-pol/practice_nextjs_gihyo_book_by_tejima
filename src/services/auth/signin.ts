@@ -51,7 +51,7 @@ const signin = async (
     )
 
     if (!checkUser(user)) {
-        throw new Error('Invalid user data received');
+        throw new Error('ユーザーデータを取得できませんでした。');
     }
     
     return user;

@@ -1,9 +1,3 @@
-const space = {
-    none: '0px',
-    small: '8px',
-    medium: '16px',
-    large: '32px',
-    extraLarge: '64px',
-} as const
+const space: string[] = ['0px', '8px', '16px', '32px', '64px']
 
-export default space;
+export default space
